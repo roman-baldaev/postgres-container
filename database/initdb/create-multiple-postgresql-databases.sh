@@ -34,9 +34,9 @@ if [ -n "$POSTGRES_USERS" ]; then
 	echo "Users created"
 fi
 
-if [ -n "$POSTGRES_MULTIPLE_DATABASES" ]; then
+if [ -n "$POSTGRES_DATABASES" ]; then
 	echo "Multiple database creation requested"
-	for db in $(echo "$POSTGRES_MULTIPLE_DATABASES" | tr ':' ' '); do
+	for db in $(echo "$POSTGRES_DATABASES" | tr ':' ' '); do
 		create_user_and_database $db
 	done
 	echo "Multiple databases created"
