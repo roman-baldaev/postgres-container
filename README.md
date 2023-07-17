@@ -17,3 +17,15 @@ Folder `/database/initdb` is binded to docker directory `/docker-entrypoint-init
 The postgres config is in [database/postgresql.conf](https://github.com/roman-baldaev/postgres-container/blob/main/database/postgresql.conf).
 
 The `PG_DATA` directory is binded to the host directory `database/data`.
+
+
+Example of `.env` file:
+```
+POSTGRES_DATABASE_1=db1
+POSTGRES_DATABASE_2=db2
+POSTGRES_USER_1=user1
+POSTGRES_USER_2=user2
+POSTGRES_PASSWORD_1=04rijf04#$4
+POSTGRES_PASSWORD_2=askdmi0(#$U98e2
+POSTGRES_PORT=5433
+```
